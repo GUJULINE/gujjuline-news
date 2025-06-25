@@ -146,3 +146,52 @@ body {
         margin: 10px 0;
     }
 }
+/* ========== Top Stories Grid ========== */
+.top-stories {
+    margin: 40px 0;
+}
+
+.top-stories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d40000;
+    padding-bottom: 5px;
+    font-family: "Georgia", serif;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.story-card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.story-card h3 {
+    font-size: 1.1rem;
+    margin: 15px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.story-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0 15px 15px 15px;
+}
