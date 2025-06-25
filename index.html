@@ -1,285 +1,47 @@
-     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Revanarta GUJULine</title>
-    <!-- Google Fonts: Roboto and Cinzel -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for microphone icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <!-- Logo Container -->
-    <div style="display: flex; align-items: center;">
-        <i class="fas fa-microphone" style="color: red; font-size: 2em; margin-right: 10px;"></i>
-        <h1 style="font-family: 'Roboto', sans-serif; color: black; margin: 0; display: flex; align-items: baseline;">
-            <span style="font-size: 0.6em; margin-right: 5px;">The</span>
-            <span style="font-family: 'Cinzel', serif; font-size: 1.5em; margin-right: 5px;">Revanarta</span>
-            <span style="color: red; font-weight: 700; font-size: 1.2em;">GUJULine</span>
-        </h1>
-    </div>
-    <!-- Tagline -->
-    <p style="font-family: 'Roboto', sans-serif; font-style: italic; color: gray;">
-        GUJULine is the voice of Gujarat, echoing across the world.
-    </p>
-</body>
-</html>
-<body>
-    <header>
-        <div class="container header-top">
-            <div class="logo">THE <span>REVANARTA</span> GUJULINE</div>
+<!-- Updated Header Section Based on NYTimes Style -->
+<header>
+    <div class="container header-top ny-header">
+        <div class="left-section">
             <div class="date-time" id="currentDateTime"></div>
+            <a href="#" class="today-paper">Today's Paper</a>
         </div>
-        <div class="breaking-news">
-            <div class="container">
-                <div class="ticker">
-                    <span class="ticker-label">BREAKING</span>
-                    <span>• Gujarat announces new development policy • Global markets rally after Fed decision • Monsoon to arrive early this year •</span>
-                </div>
-            </div>
+
+        <div class="center-section logo">
+            <span class="ny-logo">THE REVANARTA GUJULINE</span>
         </div>
-    </header>
-    
-    <nav>
-        <div class="container nav-container">
+
+        <div class="right-section">
+            <button class="subscribe-btn">Subscribe for ₹25/week</button>
+            <button class="login-btn">Log In</button>
+        </div>
+    </div>
+
+    <nav class="ny-nav">
+        <div class="container">
             <ul class="main-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">U.S.</a></li>
+                <li><a href="#">International</a></li>
                 <li><a href="#">Gujarat</a></li>
                 <li><a href="#">India</a></li>
                 <li><a href="#">World</a></li>
                 <li><a href="#">Business</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Cooking</a></li>
             </ul>
         </div>
     </nav>
-    
-    <section class="hero">
-        <div class="hero-content">
-            <span class="hero-category">Exclusive</span>
-            <h1 class="hero-title">Gujarat Leads India's Renewable Energy Revolution With New Solar Projects</h1>
-            <p class="hero-excerpt">The state government announces 5 new solar parks that will generate 2500MW of clean energy, creating thousands of jobs.</p>
-        </div>
-    </section>
-    
-    <main class="container main-content">
-        <div class="primary-content">
-            <h2 class="section-title">Top Stories</h2>
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="card-img" style="background-image: url('https://source.unsplash.com/random/600x400/?gujarat')">
-                        <span class="card-category">Politics</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">New Cabinet Reshuffle Brings Young Leaders to Forefront</h3>
-                        <p class="card-excerpt">The CM announced major changes in the state cabinet, bringing in 5 new faces under 45 years old.</p>
-                        <div class="card-meta">
-                            <span>2 hours ago</span>
-                            <span>1,245 views</span>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="card-img" style="background-image: url('https://source.unsplash.com/random/600x400/?business')">
-                        <span class="card-category">Business</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Ahmedabad Startups Raise Record $50M in Q1 2023</h3>
-                        <p class="card-excerpt">The city's startup ecosystem shows strong growth despite global funding slowdown.</p>
-                        <div class="card-meta">
-                            <span>5 hours ago</span>
-                            <span>892 views</span>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="card-img" style="background-image: url('https://source.unsplash.com/random/600x400/?sports')">
-                        <span class="card-category">Sports</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Gujarat Titans Retain Core Team for IPL 2024 Season</h3>
-                        <p class="card-excerpt">The defending champions announced their retention list with few surprises.</p>
-                        <div class="card-meta">
-                            <span>8 hours ago</span>
-                            <span>1,532 views</span>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="card-img" style="background-image: url('https://source.unsplash.com/random/600x400/?technology')">
-                        <span class="card-category">Technology</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Gujarat's First AI Research Center to Open in Gandhinagar</h3>
-                        <p class="card-excerpt">The center will focus on agricultural and healthcare applications of artificial intelligence.</p>
-                        <div class="card-meta">
-                            <span>Yesterday</span>
-                            <span>2,104 views</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            
-            <h2 class="section-title">Latest Updates</h2>
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="card-img" style="background-image: url('https://source.unsplash.com/random/600x400/?education')">
-                        <span class="card-category">Education</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">State Board Exam Results Show 5% Improvement in Pass Percentage</h3>
-                        <p class="card-excerpt">Girls outperform boys by 3.2% in the Gujarat Secondary Education Board results.</p>
-                        <div class="card-meta">
-                            <span>3 hours ago</span>
-                            <span>756 views</span>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-                    <div class="card-img" style="background-image: url('https://source.unsplash.com/random/600x400/?health')">
-                        <span class="card-category">Health</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">New Super Specialty Hospital Inaugurated in Surat</h3>
-                        <p class="card-excerpt">The 500-bed facility will provide advanced cardiac and neurological care.</p>
-                        <div class="card-meta">
-                            <span>6 hours ago</span>
-                            <span>1,023 views</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-        
-        <aside class="sidebar">
-            <h2 class="section-title">Trending Now</h2>
-            <ul class="trending-list">
-                <li class="trending-item">
-                    <span class="trending-number">1</span>
-                    <span class="trending-title">Gujarat's new industrial policy attracts ₹25,000 crore investments</span>
-                </li>
-                <li class="trending-item">
-                    <span class="trending-number">2</span>
-                    <span class="trending-title">Diamond traders protest new import regulations</span>
-                </li>
-                <li class="trending-item">
-                    <span class="trending-number">3</span>
-                    <span class="trending-title">Monsoon forecast: Gujarat to receive 105% rainfall this year</span>
-                </li>
-                <li class="trending-item">
-                    <span class="trending-number">4</span>
-                    <span class="trending-title">Statue of Unity visitor numbers cross 5 million mark</span>
-                </li>
-                <li class="trending-item">
-                    <span class="trending-number">5</span>
-                    <span class="trending-title">Traditional Gujarati 'Garba' gets UNESCO heritage tag</span>
-                </li>
-            </ul>
-            
-            <h2 class="section-title">Most Viewed</h2>
-            <ul class="trending-list">
-                <li class="trending-item">
-                    <span class="trending-number">1</span>
-                    <span class="trending-title">Ahmedabad Metro Phase 2 route map revealed</span>
-                </li>
-                <li class="trending-item">
-                    <span class="trending-number">2</span>
-                    <span class="trending-title">Gujarat's GDP growth rate surpasses national average</span>
-                </li>
-                <li class="trending-item">
-                    <span class="trending-number">3</span>
-                    <span class="trending-title">Controversy over new textbook changes in state schools</span>
-                </li>
-            </ul>
-        </aside>
-    </main>
-    
-    <footer>
+
+    <div class="breaking-strip">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>About Us</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Editorial Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Sections</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Gujarat</a></li>
-                        <li><a href="#">India</a></li>
-                        <li><a href="#">World</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">Sports</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Legal</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">GDPR Compliance</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Connect</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">YouTube</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                © 2023 The Revanarta GUJULINE. All Rights Reserved.
-            </div>
+            <span class="live-label">LIVE</span>
+            <span class="live-item">Israel-Iran Conflict <small>13m ago</small></span>
+            <span class="live-item">NATO Summit <small>16m ago</small></span>
         </div>
-    </footer>
-    
-    <script>
-        // Update date and time
-        function updateDateTime() {
-            const now = new Date();
-            const options = { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit'
-            };
-            document.getElementById('currentDateTime').textContent = now.toLocaleDateString('en-IN', options);
-        }
-        
-        updateDateTime();
-        setInterval(updateDateTime, 60000);
-        
-        // Simulate view counts (would be replaced with real data in production)
-        document.querySelectorAll('.card-meta span:last-child').forEach(el => {
-            const views = parseInt(el.textContent.replace(/,/g, ''));
-            setInterval(() => {
-                const increment = Math.floor(Math.random() * 10);
-                const newViews = views + increment;
-                el.textContent = newViews.toLocaleString() + ' views';
-            }, 5000);
-        });
-    </script>
-</body>
-</html>
+    </div>
+</header>
+
+<!-- Linked external CSS -->
+<link rel="stylesheet" href="css/style.css">
