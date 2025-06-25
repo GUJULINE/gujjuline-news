@@ -1,22 +1,120 @@
-:root {
-    --primary: #d40000;
-    --secondary: #2c3e50;
-    --accent: #3498db;
-    --light: #f8f9fa;
-    --dark: #212529;
-    --gray: #6c757d;
-}
+/* style.css - Header styling for Revanarta GUJULine */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: var(--dark);
     margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: #f9f9f9;
 }
 
-/* All your site’s CSS continues here… (I won't repeat everything here to save space) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-...
-/* Just continue pasting everything from the <style> section you had before */
+/* Header Top */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.center-section.logo {
+    text-align: center;
+    flex: 1;
+}
+
+.ny-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    letter-spacing: 1px;
+}
+
+.date-time {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.today-paper {
+    font-size: 0.9rem;
+    color: #0072c6;
+    text-decoration: none;
+}
+
+.subscribe-btn, .login-btn {
+    background: #1a558c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.subscribe-btn {
+    background-color: #2a648e;
+}
+
+/* Nav Bar */
+.ny-nav {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 15px;
+    color: #111;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.main-nav a:hover {
+    background: #eee;
+}
+
+/* Breaking News Strip */
+.breaking-strip {
+    background: #fef2f2;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.live-label {
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.live-item {
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
