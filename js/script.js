@@ -1,4 +1,3 @@
-<script>
     // Update date and time
     function updateDateTime() {
         const now = new Date();
@@ -25,4 +24,3 @@
             el.textContent = newViews.toLocaleString() + ' views';
         }, 5000);
     });
-</script>
