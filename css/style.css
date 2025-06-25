@@ -1,24 +1,24 @@
-/* style.css - Header styling for Revanarta GUJULine */
-
+/* ========== Base Reset and Fonts ========== */
 body {
     margin: 0;
     font-family: "Georgia", "Times New Roman", serif;
     background-color: #f9f9f9;
 }
 
+/* ========== Container Layout ========== */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* Header Top */
+/* ========== Header Top ========== */
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    background: white;
+    background-color: white;
     border-bottom: 1px solid #ccc;
 }
 
@@ -33,13 +33,15 @@ body {
     flex: 1;
 }
 
+/* ========== Logo ========== */
 .ny-logo {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     font-family: "Times New Roman", serif;
     letter-spacing: 1px;
 }
 
+/* ========== Date and Links ========== */
 .date-time {
     font-size: 0.9rem;
     color: #555;
@@ -51,6 +53,7 @@ body {
     text-decoration: none;
 }
 
+/* ========== Buttons ========== */
 .subscribe-btn, .login-btn {
     background: #1a558c;
     color: white;
@@ -58,14 +61,14 @@ body {
     padding: 6px 12px;
     font-size: 0.85rem;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .subscribe-btn {
     background-color: #2a648e;
 }
 
-/* Nav Bar */
+/* ========== Navigation Bar ========== */
 .ny-nav {
     background-color: #f8f9fa;
     border-bottom: 1px solid #ccc;
@@ -77,6 +80,7 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 .main-nav li {
@@ -95,7 +99,7 @@ body {
     background: #eee;
 }
 
-/* Breaking News Strip */
+/* ========== Breaking News Strip ========== */
 .breaking-strip {
     background: #fef2f2;
     padding: 10px 0;
@@ -118,3 +122,27 @@ body {
     font-size: 0.9rem;
 }
 
+/* ========== Responsive Adjustments ========== */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .ny-logo {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
