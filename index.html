@@ -1,161 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Revanarta GUJULine</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Revanarta GUJULine</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-<!-- Updated Header Section Based on NYTimes Style -->
-<header>
-    <div class="container header-top ny-header">
-        <div class="left-section">
-            <div class="date-time" id="currentDateTime"></div>
-            <a href="#" class="today-paper">Today's Paper</a>
-        </div>
-
-        <div class="center-section logo">
-            <span class="ny-logo">THE REVANARTA GUJULINE</span>
-        </div>
-
-        <div class="right-section">
-            <button class="subscribe-btn">Subscribe for ₹25/week</button>
-            <button class="login-btn">Log In</button>
-        </div>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">THE <span>REVANARTA</span> GUJULINE</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#world">World</a></li>
+          <li><a href="#india">India</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#tech">Technology</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <nav class="ny-nav">
-        <div class="container">
-            <ul class="main-nav">
-                <li><a href="#">U.S.</a></li>
-                <li><a href="#">International</a></li>
-                <li><a href="#">Gujarat</a></li>
-                <li><a href="#">India</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Arts</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">Opinion</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Cooking</a></li>
-            </ul>
-        </div>
-    </nav>
+  <main class="container">
+    <section class="top-news">
+      <h2>📰 Top Stories</h2>
+      <div class="story-grid">
+        <article class="story-card world">
+          <img src="https://source.unsplash.com/400x250/?world,news" alt="World News" />
+          <h3>Global Leaders Pledge Climate Action</h3>
+          <p>At the G20 summit, nations agree to phase out coal and invest in renewables.</p>
+          <a href="article/world1.html" class="read-more">Read More →</a>
+        </article>
+        <article class="story-card india">
+          <img src="https://source.unsplash.com/400x250/?india,politics" alt="India News" />
+          <h3>India Launches Digital Census 2025</h3>
+          <p>The largest digital census in the world begins this week across all states.</p>
+          <a href="article/india1.html" class="read-more">Read More →</a>
+        </article>
+      </div>
+    </section>
 
-    <div class="breaking-strip">
-        <div class="container">
-            <span class="live-label">LIVE</span>
-            <span class="live-item">Israel-Iran Conflict <small>13m ago</small></span>
-            <span class="live-item">NATO Summit <small>16m ago</small></span>
-        </div>
+    <section id="business">
+      <h2>💼 Business</h2>
+      <div class="story-grid">
+        <article class="story-card business">
+          <img src="https://source.unsplash.com/400x250/?stock" alt="Stock Market" />
+          <h3>Markets Rally After RBI Announcement</h3>
+          <p>Sensex hits new record as interest rates remain steady.</p>
+          <a href="article/business1.html" class="read-more">Read More →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="tech">
+      <h2>🧠 Technology</h2>
+      <div class="story-grid">
+        <article class="story-card tech">
+          <img src="https://source.unsplash.com/400x250/?ai" alt="AI News" />
+          <h3>AI Research Center Opens in Gujarat</h3>
+          <p>Focus on health and agriculture innovation through machine learning.</p>
+          <a href="article/tech1.html" class="read-more">Read More →</a>
+        </article>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <h3>🔥 Trending</h3>
+      <ul>
+        <li><a href="#">Gujarat rainfall prediction jumps 15%</a></li>
+        <li><a href="#">Nifty hits 20,000: What it means</a></li>
+        <li><a href="#">NASA selects Indian researcher for Mars mission</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+      <p>&copy; 2025 The Revanarta GUJULine. All Rights Reserved.</p>
     </div>
-</header>
+  </footer>
 
-<main class="container">
-    <section class="hero">
-        <h1>Welcome to The Revanarta GUJULine</h1>
-        <p>This is your trusted source for global and Gujarati news, headlines, and insights — powered by automation.</p>
-    </section>
-
-    <section class="top-stories">
-        <h2>Top Stories</h2>
-        <div class="story-grid">
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?news" alt="News" />
-                <h3>Gujarat to Launch 5 New Solar Parks by 2026</h3>
-                <p>The state targets 2500MW of clean energy with massive investments.</p>
-            </article>
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?finance" alt="Business" />
-                <h3>Global Markets Rise Ahead of Central Bank Decisions</h3>
-                <p>Stock indices worldwide show strong gains ahead of key policy news.</p>
-            </article>
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?politics" alt="Politics" />
-                <h3>India’s Parliament Approves Election Reforms Bill</h3>
-                <p>The new bill aims to modernize voting infrastructure and oversight.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="business">
-        <h2>Business</h2>
-        <div class="story-grid">
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?business-news" alt="Business" />
-                <h3>RBI Keeps Interest Rates Unchanged to Control Inflation</h3>
-                <p>Experts praise the central bank's stance amidst global turbulence.</p>
-            </article>
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?startup" alt="Startups" />
-                <h3>Ahmedabad Startup Raises $30M in Series B Round</h3>
-                <p>Tech company plans to expand AI hiring and infrastructure in Gujarat.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="technology">
-        <h2>Technology</h2>
-        <div class="story-grid">
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?technology" alt="Tech" />
-                <h3>India Launches Indigenous AI Research Hub</h3>
-                <p>Scientists across IITs collaborate to build ethical AI solutions.</p>
-            </article>
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?robotics" alt="Innovation" />
-                <h3>Robotic Automation to Reshape Gujarat’s Manufacturing Sector</h3>
-                <p>Automation is boosting productivity and lowering human risk factors.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="india">
-        <h2>India</h2>
-        <div class="story-grid">
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?india" alt="India News" />
-                <h3>Monsoon Arrives Early in Western States</h3>
-                <p>Farmers expect bumper harvest as rains arrive 10 days ahead of schedule.</p>
-            </article>
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?court" alt="Legal" />
-                <h3>Supreme Court Upholds Data Privacy Bill</h3>
-                <p>The long-awaited bill aims to regulate tech firms and protect citizens.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="world">
-        <h2>World</h2>
-        <div class="story-grid">
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?world-news" alt="World" />
-                <h3>Global Leaders Convene for Climate Accord in Berlin</h3>
-                <p>Over 80 nations agree to phase out coal dependency by 2040.</p>
-            </article>
-            <article class="story-card">
-                <img src="https://source.unsplash.com/400x250/?europe" alt="Europe" />
-                <h3>European Union Debates New Digital Trade Laws</h3>
-                <p>The proposed law could reshape e-commerce dynamics globally.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="content-preview">
-        <h2>Latest Highlights</h2>
-        <p>Coming soon: Featured news cards, categories, article previews, and more...</p>
-    </section>
-</main>
-
-<footer class="container">
-    <p style="text-align: center; font-size: 0.9rem; color: #777; padding: 30px 0;">
-        &copy; 2025 The Revanarta GUJULine. All Rights Reserved.
-    </p>
-</footer>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
